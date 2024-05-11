@@ -9,4 +9,4 @@ RUN sed '/^-e file:.*/d' requirements-dev.lock > requirements.txt && \
     pip install --no-cache-dir -r requirements.txt
 
 # hadolint ignore=DL3025
-CMD exec uvicorn src.app:app --host 0.0.0.0 --reload --port 8080
+CMD ["python3", "src/app.py"]
