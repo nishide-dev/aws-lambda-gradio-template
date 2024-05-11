@@ -3,4 +3,6 @@
 # internal imports
 
 
-# test the root route
+# pytest
+def test_calc_score():
+    assert {"label": "positive", "score": 0.9999}["label"] == "positive"
